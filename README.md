@@ -32,6 +32,6 @@ Migration
 
     rake db:migrate
 
-applicatoin_controller.rb
+To protect controller, add the following line before "before_filter :login_required" or whatever your auth method is
 
     oauthenticate :strategies => :token , :interactive => true
